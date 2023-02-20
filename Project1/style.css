@@ -1,0 +1,52 @@
+@import url(./reset.css);
+
+*{
+    /* outline: 1px dotted #333; */
+}
+
+body{
+    background: rgb(20,20,20);
+}
+
+.navigation{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background-image: radial-gradient(
+        rgba(2255, 255, 255, 0.1) 9%,
+        transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin; /* this makes the dots repeat throughout the screen */
+
+    transition: all 0.4s ease;
+}
+
+.navigations{
+    font-size: 38pt;
+    opacity: 1;
+}
+
+.navigations:hover .navigation{
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+}
+
+.item{
+    margin-left: 4em;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 0;
+
+    transition: all 0.4s ease;
+}
+
+.navigations:hover .item{
+    opacity: 0.5;
+}
+
+.navigations:hover .item:hover{
+    opacity: 1;
+}
